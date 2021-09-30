@@ -1,0 +1,56 @@
+#include<graphics.h>
+using namespace std;
+
+void bresenham(int x0, int y0, int xn, int yn){
+    int gd=DETECT,gm;
+    initgraph(&gd,&gm,(char*)"");
+    int x, y, xend;
+    if(x0>xn){
+        x=xn;
+        y=yn;
+        xend=x0;
+    }
+    else{
+        x=x0;
+        y=y0;
+        xend=xn;
+    }
+    putpixel(x, y, WHITE);
+    int dx, dy, P;
+    dx=abs(x0-xn);
+    dy=abs(y0-yn);
+    P=2*(dy)-dx;
+    while(x!=xend){
+        x=x+1;
+       if(P<0){
+            putpixel(x, y, WHITE);
+            P=P+2*dy;
+       }
+       else{
+            y=y+1;
+            putpixel(x, y, WHITE);
+            P=P+2*dy-2*dx;
+       }
+    }
+    getch();
+    closegraph();
+    return;
+}
+
+int main(){
+    int x0, y0, xn, yn;
+    cout<<"Enter the left end coordinates of the line"<<endl;
+    cin>>x0>>y0;
+    cout<<"Enter the right end coordinates of the line"<<endl;
+    cin>>xn>>yn;
+    if(abs(yn-y0)<abs(xn-x0)){
+        bresenham(x0, y0, xn, yn);
+    }
+    else{
+        cout<<"Cannot use Bresenham Algo in this case."<<endl;
+    }
+    return 0;
+}
+
+
+    
