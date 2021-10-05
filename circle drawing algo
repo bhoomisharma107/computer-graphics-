@@ -1,0 +1,201 @@
+//program for  multiple circle drawing algo//
+#include <iostream>
+#include <graphics.h>
+using namespace std;
+
+void plotpoints(int x, int y, int xc, int yc, int i){
+        putpixel((x+xc), (y+yc), i/6);
+        delay(5);
+        putpixel((y+xc), (x+yc), (i+1)/6);
+        delay(5);
+        putpixel((y+xc), (-x+yc), (i+2)/6);
+        delay(5);
+        putpixel((x+xc), (-y+yc), (i+3)/6);
+        delay(5);
+        putpixel((-x+xc), (-y+yc), (i+4)/6);
+        delay(5);
+        putpixel((-y+xc), (-x+yc), (i+5)/6);
+        delay(5);
+        putpixel((-y+xc), (x+yc), (i)/6);
+        delay(5);
+        putpixel((-x+xc), (y+yc), (i+1)/6);
+        delay(5);
+        return;
+}
+
+void plotpoints2(int x, int y, int xc, int yc, int temp){
+    if(temp==1){
+        putpixel((x+xc), (y+yc), WHITE);
+        putpixel((y+xc), (x+yc), WHITE);
+        putpixel((y+xc), (-x+yc), WHITE);
+        putpixel((x+xc), (-y+yc), WHITE);
+        putpixel((-x+xc), (-y+yc), WHITE);
+        putpixel((-y+xc), (-x+yc), WHITE);
+        putpixel((-y+xc), (x+yc), WHITE);
+        putpixel((-x+xc), (y+yc), WHITE);
+    }
+    else{
+        putpixel((x+xc), (y+yc), BLACK);
+        putpixel((y+xc), (x+yc), BLACK);
+        putpixel((y+xc), (-x+yc), BLACK);
+        putpixel((x+xc), (-y+yc), BLACK);
+        putpixel((-x+xc), (-y+yc), BLACK);
+        putpixel((-y+xc), (-x+yc), BLACK);
+        putpixel((-y+xc), (x+yc), BLACK);
+        putpixel((-x+xc), (y+yc), BLACK);
+    }
+        return;
+}
+
+void midpoint_circle(int xc, int yc, int r){
+    int gd=DETECT,gm;
+    initgraph(&gd,&gm,(char*)"");
+    int i=0;
+    float P=1.25-r;
+    int x=0;
+    int y=r;
+    plotpoints(x,y,xc,yc,i);
+    delay(10);
+    while(x<y){
+        x++;
+        if(P<0){
+            P=P+(2*x+2)+1;
+        }
+        else{
+            P=P+(2*x+2)-2*y+3;
+            y=y-1;
+        }
+        plotpoints(x,y,xc,yc,i);
+        i++;
+    }
+    getch();
+    closegraph();
+}
+
+void midpoint_Ccircle(int xc, int yc, int R){
+    int gd=DETECT,gm;
+    initgraph(&gd,&gm,(char*)"");
+    for(int r=0; r<=R; r=r+1){
+    float P=1.25-r;
+    float Pb=1.25-r;
+    int x=0;
+    int xb=0;
+    int y=r;
+    int yb=r;
+    plotpoints2(x,y,xc,yc,1);
+    while(x<y){
+        x++;
+        if(P<0){
+            P=P+(2*x+2)+1;
+        }
+        else{
+            P=P+(2*x+2)-2*y+3;
+            y=y-1;
+        }
+        plotpoints2(x,y,xc,yc,1);
+    }
+    delay(100);
+    if(r!=R){
+        plotpoints2(xb,yb,xc,yc,0);
+    }
+    while(xb<yb){
+        if(r==R){
+            break;
+        }
+        xb++;
+        if(Pb<0){
+            Pb=Pb+(2*xb+2)+1;
+        }
+        else{
+            Pb=Pb+(2*xb+2)-2*yb+3;
+            yb=yb-1;
+        }
+        plotpoints2(xb,yb,xc,yc,0);
+    }
+    }
+    getch();
+    closegraph();
+}
+
+void bresenham_circle(int xc, int yc, int R){
+    int gd=DETECT,gm;
+    initgraph(&gd,&gm,(char*)"");
+    float D=3-2*R;
+    int i=0;
+    int x=0;
+    int y=R;
+    plotpoints(x,y,xc,yc,i);
+    while(x<y){
+        plotpoints(x,y,xc,yc,i);
+        if(D<0){
+            D=D+(4*x)+6;
+        }
+        else{
+            D=D+4*(x-y)+10;
+            y--;
+        }
+        x++;
+        i++;
+    }
+    getch();
+    closegraph();
+}
+
+void bresenham_Ccircle(int xc, int yc, int R){
+    int gd=DETECT,gm;
+    initgraph(&gd,&gm,(char*)"");
+    for(int r=0; r<=R; r=r+1){
+    float D=3-2*r;
+    float Db=3-2*r;
+    int x=0;
+    int xb=0;
+    int y=r;
+    int yb=r;
+    plotpoints2(x,y,xc,yc,1);
+    while(x<y){
+        plotpoints2(x,y,xc,yc,1);
+        if(D<0){
+            D=D+(4*x)+6;
+        }
+        else{
+            D=D+4*(x-y)+10;
+            y--;
+        }
+        x++;
+    }
+    delay(20);
+    if(r!=R){
+        plotpoints2(xb,yb,xc,yc,0);
+    }
+    while(xb<yb){
+        if(r==R){
+            break;
+        }
+        plotpoints2(xb,yb,xc,yc,0);
+        if(Db<0){
+            Db=Db+(4*xb)+6;
+        }
+        else{
+            Db=Db+4*(xb-yb)+10;
+            yb--;
+        }
+        xb++;
+    }
+    }
+    getch();
+    closegraph();
+}
+
+int main(){
+    int xc, yc, r;
+    cout<<"Enter the coordinates of the Center of the circle: "<<endl;
+    cin>>xc>>yc;
+    cout<<"Enter the Radius: ";
+    cin>>r;
+    cout<<endl<<"The Circle has following attributes:"<<endl<<"Center: ("<<xc<<","<<yc<<")"<<endl<<"Radius: "<<r<<endl;
+    //midpoint_circle(xc,yc,r);
+    //midpoint_Ccircle(xc, yc, r);
+    bresenham_circle(xc,yc,r);
+    //bresenham_Ccircle(xc,yc,r);
+    return 0;
+}
