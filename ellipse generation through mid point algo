@@ -1,0 +1,61 @@
+Algorithm
+Step 1: Start
+
+Step 2: Declare rx , ry , x , y , m , dx , dy , P , P2.
+
+Step 3: Initialize initial point of region1 as
+
+                 x=0  ,   y = ry
+
+Step 4: Calculate P= ry2 + rx2 / 4 - ry rx2  
+
+                               dx = 2 ry2 x
+
+                               dy = 2 rx2 y        
+
+Step 5: Update values of dx and dy after each iteration.
+
+Step 6: Repeat steps while (dx < dy):
+
+            Plot (x,y)
+
+             if(P < 0)
+
+             Update x = x+1 ;
+
+             P += ­ ry2 [2x + 3 ]
+
+             Else
+
+              Update x = x + 1
+
+                           y= y - 1
+
+Step 7: When dx ≥ dy, plot region 2:
+
+Step 8: Calculate P2 = ry2 ( x+1 / 2)2 + rx2 (y -1)2- rx2ry2
+
+Step 9: Repeat till (y > 0)
+
+               If (P2 > 0)
+
+                Update y = y-1        (x will remain same)
+
+                              P2 =­ P2 -2 y rx2 + rx2
+
+                 else
+
+                 x = x+1
+
+                 y = y-1
+
+                 P2=­ P2+ 2 ry2 [2x] -2 y rx2 + rx2
+
+Step 10: End
+
+Advantages:
+
+The mid-point ellipse algorithm has simple and easy implementation as it only includes addition operations.
+Disadvantages:
+
+This algorithm is time consuming.
