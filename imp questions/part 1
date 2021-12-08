@@ -1,0 +1,553 @@
+1) GUI stands for -
+
+Graphics uniform interaction
+Graphical user interaction
+Graphical user interface
+None of the above
+Show Answer Workspace
+2) Graphics can be -
+
+Simulation
+Drawing
+Movies, photographs
+All of the above
+Hide Answer Workspace
+Answer: (d) All of the above
+
+Explanation: Computer Graphics is the creation of pictures with the help of a computer. The end product of the computer graphics is a picture; it may be a business graph, drawing, and engineering. In computer graphics, two or three-dimensional pictures can be created that are used for research.
+
+3) CAD stands for -
+
+Computer art design
+Computer-aided design
+Car art design
+None of the above
+Hide Answer Workspace
+Answer: (b) Computer-aided design
+
+Explanation: CAD is software used by engineers, architects, artists, drafters to make a technical illustration in two-dimensional (2D) and three-dimensional (3D). It is a combination of hardware and software that makes engineers designs everything.
+
+4) The components of Interactive computer graphics are -
+
+
+A monitor
+Display controller
+Frame buffer
+All of the above
+Hide Answer Workspace
+Answer: (d) All of the above
+
+Explanation: Interactive computer graphics consists of three components that are:
+
+Frame Buffer or Digital Memory
+A Monitor likes a home T.V. set without the tuning and receiving electronics.
+Display Controller or Video Controller: It passes the contents of the frame buffer to the monitor.
+5) A user can make any change in the image using -
+
+Interactive computer graphics
+Non-Interactive computer graphics
+Both (a) & (b)
+None of the above
+Hide Answer Workspace
+Answer: (a) Interactive computer graphics
+
+Explanation: In interactive Computer Graphics, the user has some control over the picture, i.e., the user can make any change in the produced image. One example of it is the ping-pong game.
+
+6) What is a pixel mask?
+
+a string containing only 0's
+a string containing only 1's
+a string containing two 0's
+a string containing both 1's and 0's
+Hide Answer Workspace
+Answer: (d) string containing both 1's and 0's
+
+Explanation: The pixel mask is a string that contains the digits 1's and 0's to represent the positions to plot along the line path.
+
+7) The higher number of pixels gives us a ____ image -
+
+Better
+Worst
+Smaller
+None of the above
+Hide Answer Workspace
+Answer: (a) Better
+
+Explanation: More number of pixels makes a better resolution of an image.
+
+A digital camera uses pixel elements (also known as a pixel) to capture images.
+
+8) Which one of the following is the primarily used output device?
+
+Video monitor
+Scanner
+Speaker
+Printer
+Hide Answer Workspace
+Answer: (a) Video monitor
+
+Explanation: The video monitor is a widely used output device.
+
+9) Which one of the following terms is used for the area of the computer captured by an application?
+
+Display
+Window
+Viewport
+None of the above
+Hide Answer Workspace
+Answer: (c) Viewport
+
+Explanation: The display method of the part selected or the design in which the selected element is viewed is called a viewport. An area on the display device to which a window is mapped is known as a viewport.
+
+10) Aspect Ratio can be defined as -
+
+The ratio of the vertical points to horizontal points
+of pixels
+Both (a) & (b)
+None of the above
+Hide Answer Workspace
+Answer: (a) Ratio of the vertical points to horizontal points
+
+Explanation: Aspect ratio is the ratio of the vertical points to horizontal points essential to produce equivalent length lines in both directions on the screen.
+
+11) Which of the following is not the pattern of line?
+
+Dotted line
+Dashed line
+Dark line
+All of the above
+Hide Answer Workspace
+Answer: (c) Dark line
+
+Explanation: Dark line is not the pattern of the line.
+
+12) DDA stands for -
+
+
+Direct differential analyzer
+Data differential analyzer
+Direct difference analyzer
+Digital differential analyzer
+Hide Answer Workspace
+Answer: (d) Digital differential analyzer
+
+Explanation: DDA is an acronym of Digital Differential Analyzer. It is an incremental method of scan conversion of lines.
+
+13) From the given list of options, which one is the accurate and efficient line-generating algorithm?
+
+Midpoint algorithm
+DDA algorithm
+Bresenham's Line algorithm
+None of the above
+Hide Answer Workspace
+Answer: (c) Bresenham's Line algorithm
+
+Explanation: Bresenham's line algorithm is an efficient method because it involves only integer addition, subtractions, and multiplication operations. These operations can be performed very rapidly, so lines can be generated quickly.
+
+14) The process of positioning an object along a straight line path from one coordinate point to another is called -
+
+Translation
+Reflection
+Shearing
+Transformation
+Hide Answer Workspace
+Answer: (a) Translation
+
+Explanation: A translation is used to an object by repositioning it along a straight line path from one co-ordinate point to another.
+
+15) Which of the following equation is used in 2D translation to move a point(x,y) to the new point (x',y')?
+
+x' = x + ty and y' = y + tx
+x' = x - tx and y' = y - ty
+x' = x + tx and y' = y + ty
+x' = x + tx and y' = y - ty
+Hide Answer Workspace
+Answer: (c) x' = x + tx and y' = y + ty
+
+Explanation: We translate a 2-D point by adding translation distance, tx, and ty, to the original coordinates position (x,y) to move the points to a new position (x', y').
+
+x' = x + tx
+
+y' = y + ty.
+
+16) The process of repositioning an object along a circular path is called -
+
+Translation
+Rotation
+Scaling
+None of the above
+Hide Answer Workspace
+Answer: (b) Rotation
+
+Explanation: Rotation is a process of changing the angle of the object. Rotation can be clockwise or anticlockwise.
+
+17) Which of the following is must be specified to generate a rotation?
+
+
+Rotational distance
+Rotation angle
+Co-ordinates
+None of the above
+Hide Answer Workspace
+Answer: (b) Rotation angle
+
+Explanation: For rotation, we have to specify the angle of rotation and rotation point. The rotation point is also known as pivot point.
+
+18) A positive value of the rotation angle -
+
+rotates an object in the clockwise direction
+rotates an object in the counter-clockwise direction
+Both of the above
+None of the above
+Hide Answer Workspace
+Answer: (b) rotates an object in the counter-clockwise direction.
+
+Explanation: The positive value of the pivot point (rotation angle) rotates an object in a counter-clockwise (anti-clockwise) direction.
+
+19) Which of the following transformation is used for altering the object's size?
+
+Translation
+Scaling
+Rotation
+None of the above
+Hide Answer Workspace
+Answer: (b) Scaling
+
+Explanation: Scaling is used to alter or change the size of objects. The change is done using scaling factors.
+
+20) What happens if the values of scaling factors sx and sy less than 1 (i.e., sx<1 and sy<1)?
+
+
+No change in the object's size
+Reduce the object's size
+Increase the object's size
+None of the above
+Hide Answer Workspace
+Answer: (b) Reduce the object's size
+
+Explanation: If scaling factors are less than one, the size of the object will be reduced.
+
+21) In which of the following case, the uniform scaling will be produced?
+
+Values of scaling factors sx and sy are unequal.
+Values of scaling factors sx and sy are equal.
+Both of the above
+None of the above
+Hide Answer Workspace
+Answer: (b) Values of scaling factors sx and sy are equal.
+
+Explanation: If the values of scaling factors sx and sy are equal, it is called Uniform Scaling.
+
+22) The Cohen-Sutherland algorithm divides the two-dimensional space in how many regions?
+
+4
+8
+9
+23
+Hide Answer Workspace
+Answer: (c) 9
+
+Explanation: If the line is neither a visible case nor an invisible case, then it will be considered to be the clipped case. The Cohen-Sutherland algorithm will divide the 2D space into nine regions. All nine regions are assigned codes. Each code is of 4 bits. If both endpoints of the line have end bits zero, then the line is considered to be visible.
+
+23) The 4-bit code of the bottom-region among the nine regions divided using the Cohen-Sutherland algorithm?
+
+0000
+0010
+0110
+0101
+Hide Answer Workspace
+Answer: (c) 0110
+
+Explanation: The 4-bit code of the bottom-right region amongst the nine regions divided by the Cohen-Sutherland algorithm is 0110.
+
+24) According to the Cohen-Sutherland algorithm, where the line lies, if the 4-bit code of both ends is 0000, and also the logical OR gives 0000?
+
+Half outside half inside
+Completely inside
+Completely outside
+None of the above
+Hide Answer Workspace
+Answer: (b) Completely inside
+
+Explanation: The line will be completely visible if both end codes are 0000, and the result of their logical OR also 0000.
+
+25) Which one of the following is the most commonly used and basic input device?
+
+Mouse
+Printer
+Scanner
+Keyboard
+Hide Answer Workspace
+Answer: (d) Keyboard
+
+Explanation: The most commonly used input device is a keyboard. The data is entered by pressing the set of keys. All keys are labeled. A keyboard with 101 keys is called a QWERTY keyboard.
+
+26) Which of the following device is used for the 3D positioning of an object?
+
+Trackball
+Mouse
+Spaceball
+All of the above
+Hide Answer Workspace
+Answer: (c) Spaceball
+
+Explanation: Spaceball is used for the three-dimensional positioning of the object.
+
+27) Which is not the input device?
+
+Impact printers
+Trackball
+Mouse
+Keyboard
+Hide Answer Workspace
+Answer: (a) Impact printers
+
+Explanation: The printers that print the characters by striking against the ribbon and onto the papers are known as Impact Printers.
+
+28) Which of the following is an example of the impact device?
+
+Laser printer
+Inkjet printer
+Line printer
+None of the above
+Hide Answer Workspace
+Answer: (c) Line printer
+
+Explanation: Line printers are the impact printers that print one line at a time. It is a high-speed impact printer as it can print 500 to 3000 lines per minute. Drum printer and chain printer are examples of line printers.
+
+29) Which of the following allows us to select the screen positions with the touch of a finger?
+
+
+Mouse
+Trackball
+Touch panel
+None of the above
+Hide Answer Workspace
+Answer: (c) Touch panel
+
+Explanation: Touch Panels is a type of display screen that has a touch-sensitive transparent panel covering the screen. A touch screen registers input when a finger or other object comes in contact with the screen.
+
+30) Which is a common device for painting or selecting the object's co-ordinate positions?
+
+Digitizer
+Touch panel
+Image scanner
+Keyboard
+Hide Answer Workspace
+Answer: (a) Digitizer
+
+Explanation: The digitizer is an operator input device, which contains a large, smooth board & an electronic tracking device, which can be changed over the surface to follow existing lines. The electronic tracking device contains a switch for the user to record the desire x & y coordinate positions. The coordinates can be entered into the computer memory or stored or an off-line storage medium such as magnetic tape.
+
+31) Grayscale is used for -
+
+Random scan display
+Monitors with color capability
+Monitors with no color capability
+All of the above
+Hide Answer Workspace
+Answer: (c) Monitors with no color capability
+
+Explanation: Grayscale images are monochrome images; means they have only one color. Grayscale images do not contain any information about color. Each pixel determines available different grey levels.
+
+32) Clipping in computer graphics is primarily used for -
+
+zooming
+copying
+removing objects and lines
+All of the above
+Hide Answer Workspace
+Answer: (c) removing objects and lines
+
+Explanation: When we have to display a large portion of the picture, then not only scaling & translation is necessary, the visible part of the picture is also identified. For deciding the visible and invisible portion, a particular process called clipping is used. Clipping determines each element into the visible and invisible portions. The visible portion is selected. An invisible portion is discarded.
+
+33) Random scan systems are used for -
+
+Color drawing application
+Pixel drawing application
+Line drawing application
+None of the above
+Hide Answer Workspace
+Answer: (c) Line drawing application
+
+Explanation: Random Scan System uses an electron beam that operates like a pencil to create a line image on the CRT screen. The picture is constructed out of a sequence of straight-line segments.
+
+34) How many phosphor color dots at each pixel position in a shadow mask CRT?
+
+1
+7
+2
+3
+Hide Answer Workspace
+Answer: (d) 3
+
+Explanation: A shadow mask CRT has 3 phosphor color dots at each pixel position.
+
+35) Shadow mask method is used in -
+
+Raster scan system
+Random scan system
+Both (a) & (b)
+None of the above
+Hide Answer Workspace
+Answer: (a) Raster scan system
+
+Explanation: Shadow Mask Method is commonly used in Raster-Scan System because they produce a much wider range of colors than the beam-penetration method.
+
+36) In which of the following CRT methods, there is an occurrence of convergence problem?
+
+Shadow mask method
+Beam penetration
+Both of the above
+None of the above
+Hide Answer Workspace
+Answer: (a) Shadow mask method
+
+Explanation: The convergence problem occurs in the shadow mask method of the color CRT monitors. It is one of the limitations of the shadow mask method.
+
+37) Which of the following uses the Beam penetration method?
+
+Raster scan system
+Random scan system
+Both (a) & (b)
+None of the above
+Hide Answer Workspace
+Answer: (b) Random scan system
+
+Explanation: The Beam-Penetration method has been used with random-scan monitors.
+
+38) Plasma panel is a type of -
+
+Emissive display
+Non-Emissive display
+Printer
+None of the above
+Hide Answer Workspace
+Answer: (a) Emissive display
+
+Explanation: None
+
+39) Which of the following algorithm is used to fill the interior of a polygon?
+
+Boundary fill algorithm
+Scan line polygon fill algorithm
+Flood fill algorithm
+All of the above
+Show Answer Workspace
+40) Which of the algorithm is used to color a pixel if it is not colored and leaves it if it is already filled?
+
+Boundary fill algorithm
+Scan line polygon fill algorithm
+Flood fill algorithm
+All of the above
+Hide Answer Workspace
+Answer: (a) Boundary fill algorithm
+
+Explanation: The Boundary fill algorithm checks whether the boundary pixels or adjacent pixels are colored or not. It leaves it, if the adjacent pixel is already filled or colored; otherwise, fill it.
+
+41) A spline can be defined as -
+
+Curved strip
+A smooth curve is drawn using a pencil.
+A flexible strip used to generate a smooth curve through a designated set of points.
+None of the above
+Hide Answer Workspace
+Answer: (c) A flexible strip used to generate a smooth curve through a designated set of points
+
+Explanation: The name spline is a flexible strip used to generate a smooth curve through a designated set of points. In computer Graphics, the name spline curves define any combined curve creates with polynomial portions fulfilling specified continuity methods at the edge of the pieces.
+
+42) Which of the following are the 2d color models?
+
+RGB and CMK
+RGB and CMG
+RGB and CMYK
+All of the above
+Hide Answer Workspace
+Answer: (c) RGB and CMYK
+
+Explanation: There are many color models. Some of them are RGB, CMYK, YIQ, HSV, and HLS, etc. RGB stands for Red, Green, and Blue. This color space is widely used in computer graphics. RGB are the main colors from which many colors can be made. CMYK stands for Cyan, Magenta, Yellow and Black. CMYK color model is used in electrostatic and ink-jet plotters, which deposits the pigmentation on paper.
+
+43) RGB color model is used for -
+
+Painting
+Sketching
+Printing
+Computer display
+Hide Answer Workspace
+Answer: (d) Computer display
+
+Explanation: The main objective of the RGB color model is for the sensing, defining, and display of pictures in electronic systems, such as televisions and computers, though it has also been utilizing in conventional photography.
+
+44) Which of the following color will generate with the intersection of three primary RGB colors?
+
+Green
+Dark red
+Dark blue
+White
+Hide Answer Workspace
+Answer: (d) White
+
+Explanation: RGB stands for Red, Green, and Blue. RGB are the main colors from which many colors can be made. The Intersection of three colors (red, green, and blue) in the RGB model will produce the white color.
+
+45) The intersection of primary colors in the CMYK color model will generate the -
+
+Green
+White color
+Black color
+Dark red
+Hide Answer Workspace
+Answer: (c) Black color
+
+Explanation: A color model described with the primary colors cyan, magenta, and yellow (CMY) is useful for defining color output to hard-copy devices. The intersection of primary colors in the CMYK color model will produce the black color.
+
+46) Select the set of colors produced in the beam-penetration method of the color CRT -
+
+Red, Green, Blue
+Cyan, Magenta, Blue
+Red, Green, Orange, Yellow
+Green, Black, Orange
+Hide Answer Workspace
+Answer: (c) Red, Green, Orange, Yellow
+
+Explanation: Beam penetration method in color CRT produces four colors only, red, green, orange and yellow. A beam of slow electrons excites the outer red layer only; hence, the screen only shows red color. A beam of high-speed electrons excites the inner green layer. Thus the screen shows a green color.
+
+47) The phase of determining the appropriate pixels for representing images or graphics object is called as -
+
+Translation
+Transformation
+Rasterization
+Scaling
+Hide Answer Workspace
+Answer: (c) Rasterization
+
+Explanation: The phase of determining the appropriate pixels for representing images or graphics objects is called rasterization.
+
+48) The process of displaying 3D into a 2D display unit is called as -
+
+Resolution
+Projection
+Rasterization
+Transformation
+Hide Answer Workspace
+Answer: (b) Projection
+
+Explanation: The process of displaying 3D into a 2D display unit is called a projection. The projection changes 3D objects into a 2D projection plane.
+
+49) The video device with reduced volume, power consumption and weight is -
+
+CRT
+Flat-panel display
+Portable display
+None of the above
+Hide Answer Workspace
+Answer: (b) Flat panel display
+
+Explanation: The Flat-Panel display refers to a class of video devices with reduced volume, weight and power requirement compared to CRT.
+
+Example: Small T.V. monitor, calculator, pocket video games, laptop computers, an advertisement board in an elevator.
+
+50) Plasma panel is also called as -
+
+Non-emissive display
+Liquid crystal display
+Gas discharge display
+None of the above
